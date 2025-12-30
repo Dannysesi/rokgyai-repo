@@ -70,6 +70,10 @@ button:focus-visible {
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x: hidden;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
@@ -77,4 +81,9 @@ button:focus-visible {
 .bg-grid-pattern {
   background-image: radial-gradient(#0f49bd 0.5px, transparent 0.5px);
   background-size: 24px 24px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
