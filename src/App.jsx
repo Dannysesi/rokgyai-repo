@@ -1,3 +1,5 @@
+import logo from "./assets/logo.png";
+
 export default function App() {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root bg-background-light dark:bg-background-dark text-[#111318] dark:text-white font-display overflow-x-hidden antialiased">
@@ -5,12 +7,19 @@ export default function App() {
       <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-[#f0f2f4] dark:bg-[#101622]/90 dark:border-gray-800">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2 text-primary">
+            {/* <div className="flex items-center gap-2 text-primary">
               <span className="material-symbols-outlined text-3xl">smart_toy</span>
               <h2 className="text-[#111318] dark:text-white text-xl font-bold tracking-tight">
                 RokgyAI
               </h2>
+            </div> */}
+            <div className="flex items-center gap-2 text-primary">
+              <img src={logo} alt="RokgyAI logo" className="h-9 w-9 object-contain" />
+              <h2 className="text-[#111318] dark:text-white text-xl font-bold tracking-tight">
+                RokgyAI
+              </h2>
             </div>
+
 
             <nav className="hidden md:flex items-center gap-8">
               <a
@@ -491,7 +500,7 @@ export default function App() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 text-primary mb-4">
-                <span className="material-symbols-outlined text-2xl">smart_toy</span>
+                <img src={logo} alt="RokgyAI logo" className="h-9 w-9 object-contain" />
                 <h2 className="text-[#111318] dark:text-white text-lg font-bold">RokgyAI</h2>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -562,7 +571,7 @@ export default function App() {
 
           <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-500 text-center md:text-left">
-              © 2024 RokgyAI. All rights reserved.
+              © 2026 RokgyAI. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
               <a className="hover:text-primary" href="#">
