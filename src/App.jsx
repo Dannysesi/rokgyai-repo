@@ -187,215 +187,247 @@ export default function App() {
 
       {/* Problem Section */}
       <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 max-w-3xl">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mb-16 max-w-8xl">
             <h2 className="text-3xl font-bold tracking-tight text-[#111318] dark:text-white sm:text-4xl mb-4">
-              Busy every day… but operations are still leaking value.
+              Your business creates value.<br />Operations quietly destroy it.
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              If your business runs on WhatsApp, spreadsheets, and “please follow up”, you’re not alone.
-              These are the operational hits that quietly cap growth.
+              Most teams aren’t failing, they’re busy.<br />
+              Most businesses aren’t inefficient they’re fragmented. Work moves across chats, spreadsheets, tools, and people, with no clear owner between steps. 
+              The result isn’t failure, but friction: delays, rework, missed follow-ups, and decisions made too late in environments where precision, speed, and consistency matter.
             </p>
           </div>
 
+          {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 */}
+            {/* Card 1 — Time */}
             <div className="group relative rounded-2xl border border-gray-200 bg-background-light dark:bg-gray-800 dark:border-gray-700 p-6 hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-red-500 shadow-sm border border-gray-100 dark:border-gray-600">
-                <span className="material-symbols-outlined">trending_down</span>
+                <span className="material-symbols-outlined">schedule</span>
               </div>
-              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Revenue slips through cracks</h3>
+              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Work waits more than it moves</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Leads go cold, follow-ups don’t happen, invoices delay, collections drag—small gaps become big losses.
+                Approvals sit in chats. Leads wait on follow-ups. Tasks stall between steps. While work is waiting, revenue is delayed, customers disengage, and momentum quietly dies often before leadership sees the impact.
               </p>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2 — Cost */}
             <div className="group relative rounded-2xl border border-gray-200 bg-background-light dark:bg-gray-800 dark:border-gray-700 p-6 hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-orange-500 shadow-sm border border-gray-100 dark:border-gray-600">
-                <span className="material-symbols-outlined">support_agent</span>
+                <span className="material-symbols-outlined">paid</span>
               </div>
-              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Customer experience is inconsistent</h3>
+              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Expensive people do cheap work</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Response times depend on who’s online. Repeat questions pile up. Escalations get missed. Customers churn.
+                Highly paid teams spend hours copying data, chasing updates, answering repeat questions, and reconciling records. Costs scale with headcount instead of output, compressing margins as the business grows.
               </p>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3 — Error & Consistency */}
             <div className="group relative rounded-2xl border border-gray-200 bg-background-light dark:bg-gray-800 dark:border-gray-700 p-6 hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 shadow-sm border border-gray-100 dark:border-gray-600">
-                <span className="material-symbols-outlined">query_stats</span>
+                <span className="material-symbols-outlined">error_outline</span>
               </div>
-              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Leadership is flying blind</h3>
+              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Value depends on who’s paying attention</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Data is scattered across tools. Reporting is manual and late—so decisions are slow, reactive, and stressful.
+                Manual handoffs create missed steps, wrong data, and inconsistent decisions. Small mistakes trigger rework, customer frustration, and risk exposure turning operational noise into real losses.
               </p>
             </div>
 
-            {/* Card 4 */}
+            {/* Card 4 — Scale */}
             <div className="group relative rounded-2xl border border-gray-200 bg-background-light dark:bg-gray-800 dark:border-gray-700 p-6 hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white dark:bg-gray-700 text-purple-500 shadow-sm border border-gray-100 dark:border-gray-600">
-                <span className="material-symbols-outlined">verified_user</span>
+                <span className="material-symbols-outlined">trending_up</span>
               </div>
-              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Risk & compliance become chaos</h3>
+              <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">Growth exposes what operations can’t handle</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Approvals happen in chats. Audit trails are missing. Fraud/leakage is hard to detect. Compliance becomes “panic mode”.
+                Processes held together by memory, follow-ups, and manual checks don’t bend under scale they break. Volume increases, visibility drops, risk rises, and leadership loses control of what’s actually happening.
               </p>
             </div>
+          </div>
+
+          {/* Closing line */}
+          <div className="mt-12 max-w-6xl">
+            <p className="text-lg font-semibold text-[#111318] dark:text-white">
+              Your business is paying for friction every day.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
+              Every delayed task, repeated check, or missed handoff quietly eats into revenue, slows growth, and increases risk. 
+              These are the gaps where most businesses bleed value without even noticing.
+            </p>
           </div>
         </div>
       </section>
 
 
-      {/* Services Section */}
-      <section className="py-20 lg:py-28 bg-background-light dark:bg-background-dark" id="services">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+
+      {/* Services / Solution Section */}
+      <section
+        className="py-20 lg:py-28 bg-background-light dark:bg-background-dark"
+        id="services"
+      >
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
           <div className="text-center mb-12">
             <span className="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">
-              Our Solutions
+              Our Approach
             </span>
             <h2 className="text-3xl font-bold text-[#111318] dark:text-white sm:text-4xl">
-              Outcomes-first automation systems
+              We focus on the gaps that silently drain value, so where operations break, AI amplifies impact.
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              We don’t sell “AI tools”. We install workflows and agents that remove bottlenecks, enforce consistency,
-              and give leadership real-time visibility.
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-5xl mx-auto">
+              The parts of your business that slow growth aren’t always obvious, but they always create silent friction that costs time, money, and control.
+              Intelligent automation handles repetitive, high-volume work while your team focuses on high-value decisions—acting as a real-time decision and knowledge layer
+              that standardizes support, routing, approvals, and execution, while keeping humans in control.
             </p>
 
-            {/* Personalization note (top, visible) */}
+            {/* AI analogy microcopy */}
             <div className="mt-6 flex justify-center">
               <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-900/60 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 backdrop-blur">
-                <span className="material-symbols-outlined text-primary text-base">tune</span>
-                Tailored to your business: we audit your workflows, then build what you need (not one-size-fits-all).
+                <span className="material-symbols-outlined text-primary text-base">
+                  build_circle
+                </span>
+                AI is a power tool, not a replacement brain: Assistant → Validator → Executor, with humans in control.
               </div>
             </div>
           </div>
 
+          {/* Solution Cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* 1) Customer Ops */}
+            {/* 1) Decision Automation (Time) */}
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-7 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-primary mb-6">
-                <span className="material-symbols-outlined text-2xl">support_agent</span>
+              <div className="w-12 h-12 bg-red-50 dark:bg-red-900/30 rounded-lg flex items-center justify-center text-red-500 mb-6">
+                <span className="material-symbols-outlined text-2xl">schedule</span>
               </div>
               <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">
-                Customer Ops Automation
+                Decision Automation
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm leading-relaxed">
-                Faster responses, consistent handling, and clean escalation so service quality scales without extra headcount.
+                Automates approvals, follow-ups, and handoffs so work moves without waiting. Ensures tasks don’t stall and decisions happen on time.
               </p>
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300 mt-auto">
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  WhatsApp + Email + Instagram flows
+                  Route tasks automatically
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Auto-triage + escalation with context
+                  Auto-follow-ups & reminders
                 </li>
               </ul>
             </div>
 
-            {/* 2) Revenue Ops */}
+            {/* 2) Workflow Orchestration (Cost) */}
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-7 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-primary mb-6">
-                <span className="material-symbols-outlined text-2xl">trending_up</span>
+              <div className="w-12 h-12 bg-orange-50 dark:bg-orange-900/30 rounded-lg flex items-center justify-center text-orange-500 mb-6">
+                <span className="material-symbols-outlined text-2xl">autorenew</span>
               </div>
               <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">
-                Revenue Ops Automation
+                Workflow Orchestration
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm leading-relaxed">
-                Stop leakage across leads, follow-ups, and handoffs so pipeline conversion doesn’t depend on reminders.
+                Reduces repetitive tasks performed by highly paid humans: data updates, triaging, and scheduling. Output scales without adding headcount.
               </p>
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300 mt-auto">
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Lead qualification + follow-ups
+                  Automate manual updates
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  CRM/Sheets updates + booking flows
+                  Streamline repetitive workflows
                 </li>
               </ul>
             </div>
 
-            {/* 3) Knowledge & SOP */}
+            {/* 3) Knowledge & SOP Copilot (Error & Consistency) */}
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-7 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-primary mb-6">
-                <span className="material-symbols-outlined text-2xl">neurology</span>
+              <div className="w-12 h-12 bg-gray-50 dark:bg-gray-800/30 rounded-lg flex items-center justify-center text-gray-700 dark:text-gray-200 mb-6">
+                <span className="material-symbols-outlined text-2xl">book_online</span>
               </div>
               <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">
                 Knowledge &amp; SOP Copilot
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm leading-relaxed">
-                Turn docs into answers. Teams execute consistently and new hires ramp faster even across branches.
+                Standardizes how tasks, approvals, and support decisions are executed, reducing mistakes, rework, and inconsistencies.
               </p>
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300 mt-auto">
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Instant SOP retrieval
+                  Instant SOP guidance
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Faster onboarding + fewer mistakes
+                  Reduce errors & rework
                 </li>
               </ul>
             </div>
 
-            {/* 4) Training / Enablement */}
+            {/* 4) Operational Scaling Layer (Scale) */}
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-7 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-primary mb-6">
-                <span className="material-symbols-outlined text-2xl">school</span>
+              <div className="w-12 h-12 bg-purple-50 dark:bg-purple-900/30 rounded-lg flex items-center justify-center text-purple-500 mb-6">
+                <span className="material-symbols-outlined text-2xl">trending_up</span>
               </div>
               <h3 className="text-lg font-bold text-[#111318] dark:text-white mb-2">
-                AI Adoption &amp; Team Training
+                Operational Scaling Layer
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm leading-relaxed">
-                We train your team to use, monitor, and improve the automations so the system sticks and keeps delivering ROI.
+                Executes repetitive high-volume work with guardrails so processes don’t break under growth, providing leadership real-time visibility.
               </p>
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300 mt-auto">
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Role-based training (Ops, Sales, Support)
+                  Scale repetitive tasks safely
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="material-symbols-outlined text-green-500 text-base">check</span>
-                  Playbooks + best practices + governance
+                  Real-time operational visibility
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Optional bottom CTA row */}
-          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center h-12 px-6 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg shadow-blue-900/10"
-            >
-              Book a Free Consultation
-            </a>
-            <a
-              href="#process"
-              className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-[#111318] dark:text-white rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
-            >
-              See How It Works
-            </a>
+          {/* Closing CTA */}
+          <div className="mt-12 max-w-6xl mx-auto text-center">
+            <p className="text-lg font-semibold text-[#111318] dark:text-white">
+              We identify where value leaks, and put automation to work only where it amplifies impact.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mt-2">
+              Every minute saved, every error prevented, and every bottleneck removed adds directly to revenue, margin, and operational resilience.
+            </p>
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-12 px-6 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg shadow-blue-900/10"
+              >
+                Book a Free Consultation
+              </a>
+              <a
+                href="#process"
+                className="inline-flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-[#111318] dark:text-white rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+              >
+                See How It Works
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
 
 
+
       {/* How It Works */}
       <section className="py-20 lg:py-28 bg-white dark:bg-gray-900" id="process">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-[#111318] dark:text-white sm:text-4xl mb-6">
-                From chaos to clarity in 3 steps
+                {/* From chaos to clarity in 3 steps */}
+                Turning operational friction into scalable impact in 3 steps
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Every engagement starts with a quick ops audit. Then we build the automations and agents around
-                your existing tools (WhatsApp, email, Sheets, CRM) and train your team to run it.
+                We start by uncovering where work stalls, mistakes happen, and costs quietly rise. Then we design automation and AI agents around your existing tools so your team can focus on high-value decisions while the system handles repetitive, high-volume work.
               </p>
 
 
@@ -409,7 +441,7 @@ export default function App() {
                       Identify Bottlenecks
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      We audit your current workflows to find the highest-impact areas for automation.
+                      We pinpoint where work slows, errors occur, and high-cost tasks drain your margins so automation targets what matters most.
                     </p>
                   </div>
                 </div>
@@ -423,7 +455,7 @@ export default function App() {
                       Automate &amp; Train
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      We build custom AI agents and train your team on how to manage them effectively.
+                      We implement AI and automation with guardrails, then empower your team to oversee and optimize them safely.
                     </p>
                   </div>
                 </div>
@@ -437,8 +469,7 @@ export default function App() {
                       Optimize &amp; Scale
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      We track results (time saved, response speed, conversions), refine the workflows, and help you scale
-                      without adding headcount.
+                      We measure time saved, errors reduced, and revenue protected then refine workflows to scale efficiently without adding headcount.
                     </p>
 
                   </div>
@@ -446,56 +477,8 @@ export default function App() {
               </div>
             </div>
 
-            {/* <div className="relative bg-background-light dark:bg-gray-800 rounded-2xl p-8 lg:p-12">
-              <div className="aspect-square w-full max-w-md mx-auto bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col overflow-hidden">
-                <div className="p-6 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-400" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                    <div className="w-3 h-3 rounded-full bg-green-400" />
-                  </div>
-                  <div className="text-xs font-mono text-gray-400">RokgyAI Monitor</div>
-                </div>
-
-                <div className="flex-1 p-6 flex flex-col gap-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-400">
-                      <span className="material-symbols-outlined">input</span>
-                    </div>
-
-                    <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
-                      <div className="absolute inset-y-0 left-0 bg-primary w-full animate-[width_2s_ease-in-out_infinite]" />
-                    </div>
-
-                    <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary">
-                      <span className="material-symbols-outlined animate-spin">settings</span>
-                    </div>
-
-                    <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
-                      <div className="absolute inset-y-0 left-0 bg-green-500 w-full animate-[width_2s_ease-in-out_infinite_1s]" />
-                    </div>
-
-                    <div className="w-12 h-12 rounded bg-green-100 dark:bg-green-900/20 flex items-center justify-center text-green-600">
-                      <span className="material-symbols-outlined">output</span>
-                    </div>
-                  </div>
-
-                  <div className="mt-auto bg-gray-50 dark:bg-gray-800 rounded p-4">
-                    <div className="flex justify-between items-end">
-                      <div>
-                        <div className="text-xs text-gray-500 uppercase tracking-wide">Hours Saved</div>
-                        <div className="text-3xl font-bold text-[#111318] dark:text-white">78h</div>
-                      </div>
-                      <div className="text-green-500 text-sm font-medium flex items-center">
-                        <span className="material-symbols-outlined text-base mr-1">trending_up</span>
-                        +24% this week
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            <div className="flex-1 p-6 flex flex-col gap-4">
+            {/* Right-side Visual Panel: Modern KPI + Workflow */}
+            <div className="flex-1 p-6 flex flex-col gap-6">
               {/* Top status row */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -509,97 +492,116 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Mini workflow pipeline */}
+              {/* Mini AI-Human Workflow Pipeline */}
               <div className="flex items-center gap-4">
+                {/* Input */}
                 <div className="w-12 h-12 rounded bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-400">
                   <span className="material-symbols-outlined">input</span>
                 </div>
 
+                {/* AI Assistant Phase */}
                 <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
-                  <div className="absolute inset-y-0 left-0 bg-primary w-4/5 animate-[width_2s_ease-in-out_infinite]" />
+                  <div className="absolute inset-y-0 left-0 bg-blue-500 w-2/3 rounded animate-[width_2s_ease-in-out_infinite]" />
+                </div>
+                <div className="w-12 h-12 rounded bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600">
+                  <span className="material-symbols-outlined animate-pulse">smart_toy</span>
                 </div>
 
-                <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary">
+                {/* Human Validation Phase */}
+                <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
+                  <div className="absolute inset-y-0 left-0 bg-yellow-500 w-4/5 rounded animate-[width_2s_ease-in-out_infinite_0.5s]" />
+                </div>
+                <div className="w-12 h-12 rounded bg-yellow-50 dark:bg-yellow-900/20 flex items-center justify-center text-yellow-600">
+                  <span className="material-symbols-outlined animate-pulse">verified_user</span>
+                </div>
+
+                {/* AI Execution Phase */}
+                <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
+                  <div className="absolute inset-y-0 left-0 bg-green-500 w-full rounded animate-[width_2s_ease-in-out_infinite_1s]" />
+                </div>
+                <div className="w-12 h-12 rounded bg-green-50 dark:bg-green-900/20 flex items-center justify-center text-green-600">
                   <span className="material-symbols-outlined animate-spin">settings</span>
-                </div>
-
-                <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded relative overflow-hidden">
-                  <div className="absolute inset-y-0 left-0 bg-green-500 w-full animate-[width_2s_ease-in-out_infinite_1s]" />
-                </div>
-
-                <div className="w-12 h-12 rounded bg-green-100 dark:bg-green-900/20 flex items-center justify-center text-green-600">
-                  <span className="material-symbols-outlined">output</span>
                 </div>
               </div>
 
-              {/* KPI grid */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-3">
-                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Avg Response Time</div>
-                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">2m 14s</div>
+              {/* KPI Grid (mapped to Problem Section) */}
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                {/* Time */}
+                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-4">
+                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Time Saved</div>
+                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">78h</div>
                   <div className="mt-1 text-xs text-green-600 dark:text-green-400 flex items-center gap-1">
                     <span className="material-symbols-outlined text-sm">south</span>
-                    down 68%
+                    Improved 68%
                   </div>
                 </div>
 
-                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-3">
-                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Revenue Protected</div>
+                {/* Cost */}
+                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-4">
+                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Cost Reclaimed</div>
                   <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">₦1.8m</div>
                   <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">this month</div>
                 </div>
 
-                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-3">
-                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Work Saved</div>
-                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">78h</div>
-                  <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">this week</div>
-                </div>
-
-                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-3">
-                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">SOP Compliance</div>
-                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">94%</div>
+                {/* Error / Consistency */}
+                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-4">
+                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Errors Prevented</div>
+                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">142</div>
                   <div className="mt-1 text-xs text-green-600 dark:text-green-400 flex items-center gap-1">
                     <span className="material-symbols-outlined text-sm">check_circle</span>
-                    improving
+                    Accuracy up 85%
+                  </div>
+                </div>
+
+                {/* Scale / Ops Efficiency */}
+                <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-4">
+                  <div className="text-[10px] text-gray-500 uppercase tracking-wide">Process Consistency</div>
+                  <div className="mt-1 text-xl font-bold text-[#111318] dark:text-white">94%</div>
+                  <div className="mt-1 text-xs text-green-600 dark:text-green-400 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm">trending_up</span>
+                    Scaling safely
                   </div>
                 </div>
               </div>
 
-              {/* Alerts / audit trail snippet */}
-              <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 p-3">
+              {/* Live Audit / Alerts Panel */}
+              <div className="rounded-lg border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 mt-6">
                 <div className="flex items-center justify-between mb-2">
                   <div className="text-xs font-semibold text-gray-700 dark:text-gray-200">Today’s Activity</div>
                   <div className="text-[11px] text-gray-500 dark:text-gray-400">Live</div>
                 </div>
 
                 <div className="space-y-2">
+                  {/* Alert 1 */}
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-start gap-2">
                       <span className="material-symbols-outlined text-green-500 text-base">check_circle</span>
                       <div>
-                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Follow-up sent</div>
+                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Follow-up Sent</div>
                         <div className="text-[11px] text-gray-500 dark:text-gray-400">Lead re-engaged (Stage: Interested)</div>
                       </div>
                     </div>
                     <div className="text-[10px] text-gray-400">9:14</div>
                   </div>
 
+                  {/* Alert 2 */}
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-start gap-2">
                       <span className="material-symbols-outlined text-orange-500 text-base">notification_important</span>
                       <div>
-                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Payment mismatch flagged</div>
+                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Payment Mismatch Flagged</div>
                         <div className="text-[11px] text-gray-500 dark:text-gray-400">Sent to finance for review</div>
                       </div>
                     </div>
                     <div className="text-[10px] text-gray-400">8:02</div>
                   </div>
 
+                  {/* Alert 3 */}
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-start gap-2">
                       <span className="material-symbols-outlined text-primary text-base">description</span>
                       <div>
-                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Audit log saved</div>
+                        <div className="text-xs text-gray-700 dark:text-gray-200 font-medium">Audit Log Saved</div>
                         <div className="text-[11px] text-gray-500 dark:text-gray-400">Approval recorded (Ops → Dispatch)</div>
                       </div>
                     </div>
@@ -632,11 +634,10 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
             <div>
               <h2 className="text-3xl font-bold sm:text-4xl mb-6">
-                Built for the realities of African business.
+                Built to stop silent friction and scale impact
               </h2>
               <p className="text-blue-100 text-lg mb-8">
-                We understand the context. Unstable connectivity, diverse payment methods, and the need for
-                rock-solid reliability. We don't sell "future tech" we sell systems that work today.
+                We understand the realities of African business: fragmented workflows, diverse tools, and the pressure to scale efficiently. We don’t sell hype we build systems that save time, reduce errors, reclaim costs, and scale operations reliably from day one.
               </p>
 
               <div className="flex flex-col gap-4">
@@ -659,8 +660,7 @@ export default function App() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
                 <h3 className="text-xl font-bold mb-4">Client Outcome</h3>
                 <blockquote className="text-lg italic text-blue-50 mb-6">
-                  "Before RokgyAI, our support team was drowning. Now, 70% of tickets are resolved
-                  automatically, and our response time dropped from 2 hours to less than 2 minutes."
+                  "Before RokgyAI, our support team struggled to keep up. Now, 70% of tickets are resolved automatically, follow-ups happen in minutes, and our operational visibility is real-time letting our team focus on strategic decisions."
                 </blockquote>
                 <div className="flex items-center gap-3">
                   <div
