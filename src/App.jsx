@@ -22,7 +22,7 @@ export default function App() {
             <div className="flex items-center gap-2 text-primary">
               <img src={logo} alt="RokgyAI logo" className="h-9 w-9 object-contain" />
               <h2 className="text-[#111318] dark:text-white text-xl font-bold tracking-tight">
-                RokgyAI
+                Rokgy
               </h2>
             </div>
 
@@ -62,87 +62,83 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        {/* Background image layer (blurred) */}
+        {/* Background image layer */}
         <div
           className="absolute inset-0 z-0 bg-cover bg-center blur-sm scale-110 opacity-70"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
-        {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60 dark:from-black/70 dark:via-black/55 dark:to-black/75" /> */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/80 via-white/25 to-transparent dark:from-black/60 dark:via-black/25 dark:to-transparent" />
-        {/* <div className="absolute inset-0 z-0 bg-gradient-to-l from-black/100 via-black/35 to-transparent" /> */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/85 via-white/30 to-transparent dark:from-black/65 dark:via-black/30 dark:to-transparent" />
 
-        {/* Existing grid pattern */}
+        {/* Subtle grid texture */}
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
 
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+            
+            {/* Left content */}
             <div className="flex flex-col gap-6 max-w-2xl">
+              {/* Eyebrow */}
               <div className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-sm font-medium text-primary w-fit">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2" />
-                Operational AI for African SMEs
+                Operational AI systems for growing African businesses
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#111318] dark:text-white leading-[1.15]">
-                Automate the chaos.
-                <br />
-                <span className="text-primary">Scale operations</span> without adding headcount.
+              {/* Headline */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#111318] dark:text-white leading-[1.2]">
+                Operational friction leaks value. We install leverage where it matters.
               </h1>
 
-              {/* <p className="text-lg text-gray-100 dark:text-gray-200 leading-relaxed max-w-lg"> */}
-              <p className="text-lg text-[#111318] dark:text-gray-300 leading-relaxed max-w-lg">
-                We turn manual bottlenecks into automated workflows. Practical AI solutions that fix support,
-                sales, and reporting—no hype, just results.
+
+              {/* Supporting headline */}
+              <p className="text-xl font-semibold text-primary">
+                We fix the gaps where work slows down, mistakes happen, and growth breaks.
               </p>
 
+              {/* Subheadline */}
+              <p className="text-lg text-[#111318] dark:text-gray-300 leading-relaxed max-w-lg">
+                We diagnose where value leaks in your workflows, then install intelligent automation
+                only where it creates leverage handling repetitive work in the background while
+                your team stays in control.
+              </p>
+
+              {/* CTAs */}
               <div className="flex flex-wrap gap-4 pt-2">
-                <button className="flex items-center justify-center h-12 px-6 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg shadow-blue-900/10">
-                  Book a Free Consultation
-                </button>
-                <button className="flex items-center justify-center h-12 px-6 bg-white border border-gray-200 text-[#111318] rounded-lg font-semibold hover:bg-gray-50 transition-all">
+                <a
+                  href="#"
+                  className="flex items-center justify-center h-12 px-6 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg shadow-blue-900/10"
+                >
+                  Book a Free Discovery Call
+                </a>
+                <a
+                  href="#process"
+                  className="flex items-center justify-center h-12 px-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-[#111318] dark:text-white rounded-lg font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+                >
                   See How It Works
-                </button>
+                </a>
               </div>
 
-              {/* <div className="flex items-center gap-4 text-sm text-gray-200 dark:text-gray-300 pt-4"> */}
+              {/* Social proof */}
               <div className="flex items-center gap-4 text-sm text-[#111318] dark:text-gray-300 pt-4">
                 <div className="flex -space-x-2">
-                  <div
-                    className="w-8 h-8 rounded-full border-2 border-white bg-gray-200"
-                    style={{
-                      backgroundImage:
-                        "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXuZOBK04zixyx4CXV59E777jmwb3YCxGbyUol1PGNRKsx24E2bSbsHyOiN3_nljH3kkDpW9cll1JFG1Ow3HY_V8yKnd7eqEJKEw-Rsun4KtwRQZxX1n6hhV3vTT_92JWpykQWxKqcdDaCPY9tT4Od3F172nxxJF983NTlE7b63B_99PjnVzzLcXhhe5b981m_0-tQAEuQmNaYtbCAgLGk68XAt7WXKGALffHI4a_b-HJ-ggkDpsnPcOP8GJpr_HUktltOj9ImUYs')",
-                      backgroundSize: "cover",
-                    }}
-                  />
-                  <div
-                    className="w-8 h-8 rounded-full border-2 border-white bg-gray-300"
-                    style={{
-                      backgroundImage:
-                        "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZS4IsJF-1kE9zBeP5WhgeG2RpZxAJ-Y-_GMUYjNWlsN7LYZjItYz-uhuKDvlrqPLoc96E95fNSklGO9q51xDfzAgi5vnq0WV7zn3VYS14JO9z3NS36XcY2zcNVV76OzUc29GN_ZSwV2IZbicY_w9QaENMlVtxvnJu94DHAqw0AnU3zxmqxio1dcyRXpRleg-IEl9hoclRLzME3D6nUYeFJetQ0PpDsSxVAPme0FgjG1WbtKE9yToD5NUI8DIGS7a4z3GB8VIBWE8')",
-                      backgroundSize: "cover",
-                    }}
-                  />
-                  <div
-                    className="w-8 h-8 rounded-full border-2 border-white bg-gray-400"
-                    style={{
-                      backgroundImage:
-                        "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDTDGBgp-KCpbAijuANo_eWurB1neCf52Fmwn1s3njRwsBgXNFezqcd-znVsugEehNfuJIg6qKT0FFGZ-jwW3I-67LO2pGf3mYmPR2eENm2GxEIxqWtK-VjNzf7c5KIOf560ekvJykXDmpRmOQu09GfTdQ9hB9-FLtd1TQKx41iOXpgkXLQLMSu7qBCyp7FSBZfAoHakwWxiVrD8v7Xq1d9gL34zFiu7-bTepOp7NG6OMyS_--DYGjVCgo4Qm4bKtMdXFSqp9ZQEU')",
-                      backgroundSize: "cover",
-                    }}
-                  />
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-gray-200" />
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-gray-300" />
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-gray-400" />
                 </div>
-                <p>Trusted by 20+ operations leaders</p>
+                <p>Trusted by 20+ business operations team</p>
               </div>
             </div>
 
+            {/* Right visual panel */}
             <div className="relative lg:h-auto lg:w-full flex justify-center lg:justify-end">
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-white border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50/50 dark:from-gray-800 dark:to-gray-900" />
+
                 <div className="absolute inset-0 p-8 flex flex-col justify-center items-center">
-                  <div className="w-full max-w-sm bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-4 mb-4 transform translate-y-4 opacity-90">
+                  {/* Input card */}
+                  <div className="w-full max-w-sm bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-4 mb-4 opacity-90">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary">
-                        <span className="material-symbols-outlined text-sm">mail</span>
+                        <span className="material-symbols-outlined text-sm">input</span>
                       </div>
                       <div className="h-2 w-24 bg-gray-100 rounded" />
                     </div>
@@ -152,6 +148,7 @@ export default function App() {
                     </div>
                   </div>
 
+                  {/* Automation core */}
                   <div className="flex flex-col items-center z-10">
                     <div className="h-8 w-0.5 bg-blue-200 mb-1" />
                     <div className="bg-primary text-white rounded-full p-2 shadow-lg mb-1">
@@ -160,6 +157,7 @@ export default function App() {
                     <div className="h-8 w-0.5 bg-blue-200 mt-1" />
                   </div>
 
+                  {/* Output card */}
                   <div className="w-full max-w-sm bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-l-4 border-l-primary border-gray-100 dark:border-gray-700 p-4 mt-4">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
@@ -173,13 +171,14 @@ export default function App() {
                       <span className="text-[10px] text-gray-400">Just now</span>
                     </div>
                     <div className="h-2 w-full bg-gray-50 rounded mb-2" />
-                    <div className="h-8 w-24 bg-primary/10 rounded flex items-center justify-center text-primary text-xs font-medium">
-                      Ticket Solved
+                    <div className="h-8 w-28 bg-primary/10 rounded flex items-center justify-center text-primary text-xs font-medium">
+                      Ticket Resolved
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -194,8 +193,8 @@ export default function App() {
               Your business creates value.<br />Operations quietly destroy it.
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Most teams aren’t failing, they’re busy.<br />
-              Most businesses aren’t inefficient they’re fragmented. Work moves across chats, spreadsheets, tools, and people, with no clear owner between steps. 
+              Most teams aren’t failing, they’re just busy with less impactful work.<br />
+              And most businesses aren’t inefficient, they’re fragmented. Work moves across chats, spreadsheets, tools, and people, with no clear owner between steps. 
               The result isn’t failure, but friction: delays, rework, missed follow-ups, and decisions made too late in environments where precision, speed, and consistency matter.
             </p>
           </div>
@@ -273,12 +272,12 @@ export default function App() {
             <span className="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">
               Our Approach
             </span>
-            <h2 className="text-3xl font-bold text-[#111318] dark:text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold text-[#111318] dark:text-white sm:text-3.5xl">
               We focus on the gaps that silently drain value, so where operations break, AI amplifies impact.
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-5xl mx-auto">
               The parts of your business that slow growth aren’t always obvious, but they always create silent friction that costs time, money, and control.
-              Intelligent automation handles repetitive, high-volume work while your team focuses on high-value decisions—acting as a real-time decision and knowledge layer
+              Intelligent automation handles repetitive, high-volume work while your team focuses on high-value decisions acting as a real-time decision and knowledge layer
               that standardizes support, routing, approvals, and execution, while keeping humans in control.
             </p>
 
@@ -685,24 +684,41 @@ export default function App() {
 
       {/* Final CTA */}
       <section className="py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-[960px] mx-auto px-4 text-center">
+        <div className="max-w-[1280px] mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-[#111318] dark:text-white sm:text-4xl mb-6">
-            Stop drowning in manual work.
+            Stop losing value to operational friction.
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-            Get clarity on what to automate first. No pressure, no hype—just a clear roadmap for operational
-            efficiency.
+
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-4xl mx-auto">
+            Get a clear view of where time, cost, errors, and scale are working against you.
+            In a short discovery call, we identify your biggest operational leaks and where
+            intelligent automation will create the most leverage—no pressure, no hype, just
+            a practical path forward.
           </p>
+
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg">
+            <a
+              href="#"
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg shadow-blue-900/10"
+            >
               Book a Free Discovery Call
-            </button>
-            <button className="bg-white border border-gray-300 hover:bg-gray-50 text-[#111318] px-8 py-4 rounded-lg text-lg font-bold transition-all">
+            </a>
+
+            <a
+              href="#case-studies"
+              className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 text-[#111318] dark:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all"
+            >
               View Case Studies
-            </button>
+            </a>
+          </div>
+
+          {/* Optional trust microcopy */}
+          <div className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+            No commitment. No generic AI pitch. Just clarity.
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="relative bg-background-light dark:bg-[#0b0f17] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
